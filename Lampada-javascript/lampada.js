@@ -33,8 +33,6 @@ turnOn.addEventListener('click', lampOn);
 turnOff.addEventListener('click', lampOff);
 lamp.addEventListener('mouseover',lampOn);
 lamp.addEventListener('mouseleave',lampOff);
-lamp.addEventListener('dblclick', lampQuebrada);
-}
-
+lamp.addEventListener('dblclick', function(){ alert("Você quebrou a lâmpada💡")});  
 acoesLampada();
 
