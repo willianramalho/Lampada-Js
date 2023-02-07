@@ -1,2 +1,2 @@
-# L-mpada-Js
+# Lâmpada-Js
 Treinando em javascript
