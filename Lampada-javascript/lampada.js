@@ -1,7 +1,9 @@
 // ligar a lampada
 const turnOn = document.getElementById('turnOn');
+
 // desligar a lampada
 const turnOff = document.getElementById('turnOff');
+
 // selecionando a lampada
 const lampada = document.getElementById('lampada');
 
@@ -24,7 +26,6 @@ function lampQuebrada() {
 //verifica se a lampada está quebrada
 function lampadaBroken () {
     return lamp.src.indexOf('quebrada') > -1;
-
 }
 
 // executando as ações
@@ -33,6 +34,8 @@ turnOn.addEventListener('click', lampOn);
 turnOff.addEventListener('click', lampOff);
 lamp.addEventListener('mouseover',lampOn);
 lamp.addEventListener('mouseleave',lampOff);
-lamp.addEventListener('dblclick', function(){ alert("Você quebrou a lâmpada💡")});  
-acoesLampada();
+lamp.addEventListener('dblclick', lampQuebrada);
+lamp.addEventListener('dblclick', function(){ alert("Você quebrou a lâmpada💡")});
+}
 
+acoesLampada();
